@@ -1,0 +1,21 @@
+# Build output
+dist/
+bin/
+obj/
+
+# Local editor and OS files
+.vs/
+.vscode/
+*.user
+*.suo
+*.tmp
+*.log
+Thumbs.db
+Desktop.ini
+
+# Python helper cache
+__pycache__/
+*.py[cod]
+
+# Local app settings
+settings.xml
