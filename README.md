@@ -2,9 +2,15 @@
 
 [简体中文](README.zh-CN.md)
 
-Taskbar World Clock is a lightweight Windows taskbar clock overlay for showing another time zone without changing your system time.
+Taskbar World Clock is a lightweight Windows taskbar overlay for watching another time zone without changing your system clock.
 
-It was originally built for developers who need to keep their system time in one region while checking another region's working hours, such as teammates in a different country or tools that depend on local system time.
+It is built for people who need a second time reference that stays visible: cross-time-zone collaboration, overseas working hours, remote teams, or developer tools that depend on the local system time staying unchanged.
+
+## Why It Exists
+
+Changing the Windows system time is a blunt workaround. It can affect logs, scheduled jobs, authentication flows, and tools that assume local time is stable.
+
+Taskbar World Clock keeps your system clock untouched and adds a small, configurable time-zone display on top of the taskbar. The design goal is to make another time zone glanceable without turning it into a full calendar app or a distracting desktop widget.
 
 ## Features
 
@@ -17,6 +23,7 @@ It was originally built for developers who need to keep their system time in one
 - Auto-collapse on hover to avoid blocking content.
 - Optional click-through mode.
 - Optional start with Windows.
+- Built-in UI localization for multiple languages.
 - Settings persist in `%LOCALAPPDATA%\TaskbarWorldClock\settings.xml`.
 
 ## Preview
@@ -89,6 +96,22 @@ Open the settings panel from the tray icon, right-click the widget, double-click
 .\dist\TaskbarWorldClock.exe --settings
 ```
 
+## Language Support
+
+Taskbar World Clock includes built-in UI localization for Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French, Spanish, Portuguese, and Russian.
+
+The project keeps English as the primary README language and provides a Simplified Chinese README. Additional README translations are not maintained for now because the app itself is already localized.
+
+## Settings And Local Data
+
+Settings are stored locally at:
+
+```text
+%LOCALAPPDATA%\TaskbarWorldClock\settings.xml
+```
+
+The app does not require an account or a network connection for normal use.
+
 ## Roadmap
 
 - Calendar view
@@ -103,15 +126,3 @@ Suggestions and bug reports are welcome through GitHub Issues.
 ## License
 
 MIT License. See [LICENSE](LICENSE).
-
-## Other Languages
-
-- Simplified Chinese: Taskbar World Clock is a Windows taskbar world clock tool for showing another time zone.
-- Traditional Chinese: Taskbar World Clock is a Windows taskbar world clock tool for showing another time zone.
-- Japanese: Taskbar World Clock shows another time zone on the Windows taskbar.
-- Korean: Taskbar World Clock shows another time zone on the Windows taskbar.
-- German: Taskbar World Clock shows another time zone on the Windows taskbar.
-- French: Taskbar World Clock shows another time zone on the Windows taskbar.
-- Spanish: Taskbar World Clock shows another time zone on the Windows taskbar.
-- Portuguese: Taskbar World Clock shows another time zone on the Windows taskbar.
-- Russian: Taskbar World Clock shows another time zone on the Windows taskbar.
