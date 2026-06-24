@@ -2,29 +2,27 @@
 
 [简体中文](README.zh-CN.md)
 
-Taskbar World Clock is a lightweight Windows taskbar overlay for watching another time zone without changing your system clock.
+Taskbar World Clock is a lightweight Windows taskbar overlay for keeping another time zone visible without changing your system clock.
 
-It is built for people who need a second time reference that stays visible: cross-time-zone collaboration, overseas working hours, remote teams, or developer tools that depend on the local system time staying unchanged.
+It is designed to feel like part of your taskbar: place it on the left side to avoid covering the system clock, adjust its size and position, match the background color to your taskbar, choose your preferred time and date format, and collapse or bring it back quickly when you need the space.
+
+It is useful when your system time needs to stay in one region, but you still want a quick view of another time zone: remote collaboration, overseas working hours, travel planning, or developer workflows involving Claude and other AI tools.
 
 ## Why It Exists
 
-Changing the Windows system time is a blunt workaround. It can affect logs, scheduled jobs, authentication flows, and tools that assume local time is stable.
+Sometimes changing the Windows system time is inconvenient, and sometimes you simply need to watch two time zones at once.
 
-Taskbar World Clock keeps your system clock untouched and adds a small, configurable time-zone display on top of the taskbar. The design goal is to make another time zone glanceable without turning it into a full calendar app or a distracting desktop widget.
+Taskbar World Clock keeps the system clock as it is and adds a small, configurable time-zone display on the taskbar. It is meant to be glanceable, quiet, and easy to leave running while you work.
 
 ## Features
 
-- Show a configurable time zone on the Windows taskbar.
-- Search Windows time zones by city, country, English name, localized name, or UTC offset.
-- Switch between 24-hour and 12-hour time formats.
-- Customize layout, date format, weekday display, fonts, text colors, and background color.
-- Pick a color directly from the screen to match the taskbar or desktop.
-- Set widget position, size, and coordinates.
-- Auto-collapse on hover to avoid blocking content.
-- Optional click-through mode.
+- Show another time zone directly on the Windows taskbar.
+- Search Windows time zones by city, country, localized name, or UTC offset.
+- Customize time/date format, weekday display, font, colors, position, and size.
+- Match the widget background to the taskbar with the screen color picker.
+- Collapse on hover or use click-through mode when you do not want it blocking content.
 - Optional start with Windows.
 - Built-in UI localization for multiple languages.
-- Settings persist in `%LOCALAPPDATA%\TaskbarWorldClock\settings.xml`.
 
 ## Preview
 
@@ -99,8 +97,6 @@ Open the settings panel from the tray icon, right-click the widget, double-click
 ## Language Support
 
 Taskbar World Clock includes built-in UI localization for Simplified Chinese, Traditional Chinese, Japanese, Korean, German, French, Spanish, Portuguese, and Russian.
-
-The project keeps English as the primary README language and provides a Simplified Chinese README. Additional README translations are not maintained for now because the app itself is already localized.
 
 ## Settings And Local Data
 
